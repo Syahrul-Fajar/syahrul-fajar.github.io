@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[1,17],{91:function(n,o,e){"use strict";e.r(o);var t,i=e(13),c=e(9),r=e(25),l=e(389),s=e(2),f=Object(c.c)(l.a.h1)(t||(t=Object(i.a)(["\n  display: inline-block;\n  color: ",';\n  font-family: "Pacifico", cursive;\n\n  position: fixed;\n  left: 2rem;\n  top: 2rem;\n  z-index: 3;\n'])),(function(n){return"light"===n.color?r.b.text:r.b.body}));o.default=function(n){return Object(s.jsx)(f,{color:n.theme,whileHover:{scale:1.2},children:"MIT"})}}}]);
+//# sourceMappingURL=1.bc9c70fe.chunk.js.map
