@@ -91,14 +91,12 @@ const MySkillsPage = () => {
             <Design width={40} height={40} /> Web Designer
           </Title>
           <Description>
-            I love to create designs which speaks, keep illustrations clean,
-            minimal and simple!
+            Saya suka desain tampilan depan yang user Friendly
           </Description>
           <Description>
-            <strong>I like to Design</strong>
+            <strong>Saya sedikit menyukai Desain</strong>
             <ul>
               <li>Websites</li>
-              <li>Mobile Apps</li>
             </ul>
           </Description>
           <Description>
@@ -113,12 +111,11 @@ const MySkillsPage = () => {
             <Develope width={40} height={40} /> Frontend Developer
           </Title>
           <Description>
-            I value business or brand for which I'm creating, thus I enjoy
-            brining new ideas to life.
+            Mencoba bersenang-senang dengan Teknologi
           </Description>
           <Description>
             <strong>Skills</strong>
-            <ul>Html, Css, Js, React, Redux, Node.js, Express, SQL, Heroku</ul>
+            <ul>Html, Css, Js, React, SQL</ul>
           </Description>
           <Description>
             <strong>Tools</strong>
