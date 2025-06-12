@@ -1,0 +1,64 @@
+ # Nama workflow yang akan muncul di tab Actions GitHub
+    name: Deploy Next.js site to Pages
+
+    on:
+      # Jalankan workflow ini setiap kali ada push ke branch `main`
+      push:
+        branches: ["master"]
+      # Izinkan untuk menjalankan workflow ini secara manual dari tab Actions
+      workflow_dispatch:
+
+    # Atur izin untuk GITHUB_TOKEN agar bisa melakukan deployment
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    # Izinkan hanya satu deployment berjalan pada satu waktu
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+
+    jobs:
+      # Job untuk mem-build situs
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          # 1. Checkout kode dari repository
+          - name: Checkout
+            uses: actions/checkout@v4
+
+          # 2. Setup Node.js
+          - name: Setup Node
+            uses: actions/setup-node@v4
+            with:
+              node-version: "18" # Atau versi Node.js yang Anda gunakan
+              cache: "npm"
+
+          # 3. Install dependencies
+          - name: Install Dependencies
+            run: npm install
+
+          # 4. Build situs (ini akan membuat folder 'out')
+          - name: Build with Next.js
+            run: npm run build
+
+          # 5. Upload artifact (hasil build) untuk digunakan oleh job deploy
+          - name: Upload artifact
+            uses: actions/upload-pages-artifact@v3
+            with:
+              path: ./out
+
+      # Job untuk men-deploy situs
+      deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        name: Deploy
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v4
+    
