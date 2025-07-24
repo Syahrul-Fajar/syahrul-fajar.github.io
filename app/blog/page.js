@@ -40,5 +40,5 @@
 //     </div>
 //   );
 // };
-
+export const dynamic = 'force-static';
 // export default page;
