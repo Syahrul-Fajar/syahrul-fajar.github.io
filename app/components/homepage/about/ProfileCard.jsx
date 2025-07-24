@@ -1,6 +1,8 @@
+// app/components/homepage/about/ProfileCard.jsx
 "use client"; // Ini harus selalu ada di baris paling atas
 
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
+import Image from "next/image"; // <--- Tambahkan import ini
 import "./ProfileCard.css"; // Ini harus selalu ada untuk styling
 
 // --- Variabel Konfigurasi dan Helper Functions (ESENSIAL untuk ProfileCardComponent) ---
@@ -258,30 +260,30 @@ const ProfileCardComponent = ({
           <div className="pc-shine" />
           <div className="pc-glare" />
           <div className="pc-content pc-avatar-content">
-            <img
+            {/* Mengganti <img> dengan <Image /> */}
+            <Image
               className="avatar"
               src={avatarUrl}
               alt={`${name || "User"} avatar`}
-              loading="lazy"
-              onError={(e) => {
-                const target = e.target;
-                // Anda bisa menambahkan fallback image di sini
-                // target.src = "/path/to/fallback/image.png"; 
-              }}
+              width={280} // <--- Tentukan lebar gambar sesuai kebutuhan UI Anda
+              height={280} // <--- Tentukan tinggi gambar sesuai kebutuhan UI Anda
+              unoptimized={true} // <--- Penting untuk output: 'export'
+            // Hapus onError jika Anda tidak memerlukannya dengan <Image>,
+            // atau sesuaikan untuk bekerja dengan next/image
             />
             {showUserInfo && (
               <div className="pc-user-info">
                 <div className="pc-user-details">
                   <div className="pc-mini-avatar">
-                    <img
+                    {/* Mengganti <img> dengan <Image /> */}
+                    <Image
                       src={miniAvatarUrl || avatarUrl}
                       alt={`${name || "User"} mini avatar`}
-                      loading="lazy"
-                      onError={(e) => {
-                        const target = e.target;
-                        target.style.opacity = "0.5";
-                        target.src = avatarUrl;
-                      }}
+                      width={48} // <--- Tentukan lebar gambar sesuai kebutuhan UI Anda
+                      height={48} // <--- Tentukan tinggi gambar sesuai kebutuhan UI Anda
+                      unoptimized={true} // <--- Penting untuk output: 'export'
+                    // Hapus onError jika Anda tidak memerlukannya dengan <Image>,
+                    // atau sesuaikan untuk bekerja dengan next/image
                     />
                   </div>
                   <div className="pc-user-text">
