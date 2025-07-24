@@ -59,14 +59,27 @@ function Education() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-violet-500 transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {education.title}
                           </p>
-                          <p className="text-sm sm:text-base">{education.institution}</p>
+                          <p className="text-sm sm:text-base mb-3">{education.institution}</p>
+
+                          {/* Tambahkan bagian untuk menampilkan organisasi */}
+                          {education.organizations && education.organizations.length > 0 && (
+                            <div className="mt-2 border-t border-gray-700 pt-2">
+                              <p className="text-sm font-medium text-[#16f2b3] mb-1">Organization:</p>
+                              {education.organizations.map((org, index) => (
+                                <div key={index} className="ml-2 mb-2">
+                                  <p className="text-sm font-medium">{org.name}</p>
+                                  <p className="text-xs text-gray-400">{org.role} • {org.year}</p>
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
