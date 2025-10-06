@@ -1,0 +1,131 @@
+{
+    "basics": {
+        "name": "SYAHRUL FAJAR",
+        "label": "Web Developer",
+        "email": "syhrlfajar113@gmail.com",
+        "phone": "",
+        "picture": "",
+        "x_title": "Hello, Saya",
+        "job1": "Web",
+        "job2": "Developer",
+        "description": "Hello! Saya SYAHRUL FAJAR! Saya penggemar pengembangan web. Selalu siap untuk hal baru dan menantang! Seperti markdown, saya di sini untuk membantu Anda membuat situs web dengan format yang indah.",
+        "summary": "Saya adalah seorang web developer yang berdomisili di Semarang, Jawa Tengah, Indonesia. Saya memiliki pengalaman dalam pengembangan web dan desain UI. Saya selalu siap untuk hal baru dan menantang!",
+        "keywords": "personal,website,portfolio,template,kit,syahrul,fajar,syhrlfajar113,webdev,web,developer,semarang,jawa,tengah,indonesia,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
+        "url": "https://syahrul-fajar.github.io/",
+        "location": {
+            "address": "Semarang",
+            "postalCode": "50275",
+            "city": "Portofolio",
+            "country": "",
+            "countryCode": "ID",
+            "region": "Jawa Tengah"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "syhrlfajar113@gmail.com",
+                "url": "mailto:syhrlfajar113@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "syahrul-fajar",
+                "url": "https://www.linkedin.com/in/syahrul-fajar-132057315",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "syahrul-fajar",
+                "url": "https://github.com/syahrul-fajar",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "Instagram",
+                "username": "syahrulfajar",
+                "url": "https://www.instagram.com/syahrulfajar",
+                "x_icon": "fab fa-instagram"
+            },
+            {
+                "network": "Facebook",
+                "username": "syahrulfajar",
+                "url": "https://www.facebook.com/syahrulfajar",
+                "x_icon": "fab fa-facebook"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Company",
+            "position": "President",
+            "website": "#",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "#",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description...",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universitas Muhammadiyah Semarang",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2023-09-08",
+            "endDate": "2027-06-01",
+            "gpa": "4.0",
+            "courses": ["DB1101 - Basic SQL"]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description..."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": ["HTML", "CSS", "Javascript"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Indonesia",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": ["Ferrets", "Unicorns"]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference..."
+        }
+    ]
+}

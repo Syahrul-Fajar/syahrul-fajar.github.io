@@ -1,0 +1,122 @@
+/* src/components/Skills/Skills.css */
+
+.skills-section {
+  position: relative;
+  z-index: 10;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Pastikan tidak ada background-color di sini */
+}
+
+/* ... (style untuk .skills-title-container tidak berubah) ... */
+.skills-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.skills-title-container .line {
+  width: 6rem;
+  height: 2px;
+}
+.skills-title-container .title-text {
+  padding: 0.5rem 1.25rem;
+  font-size: 1.25rem;
+  border-radius: 0.375rem;
+}
+
+.marquee-container {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.skill-card {
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  margin: 0 1.25rem;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.15);
+}
+
+.skill-card-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.skill-card:hover .skill-card-inner {
+  border-color: #00bfbf; /* Warna ungu saat hover */
+}
+
+/* ... (style untuk icon dan nama tidak berubah) ... */
+.skill-icon-wrapper {
+  height: 2.5rem; /* 40px */
+}
+.skill-icon {
+  height: 100%;
+  width: auto;
+  border-radius: 0.5rem;
+}
+.skill-name {
+  font-size: 1.125rem; /* 18px */
+}
+
+
+/* ================================== */
+/* === PENGATURAN TEMA (THEMING) === */
+/* ================================== */
+
+/* --- TEMA GELAP (DARK THEME) --- */
+.skills-section.dark .line,
+.skills-section.dark .title-text {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.skills-section.dark .title-text {
+  color: white;
+}
+.skills-section.dark .skill-card-inner {
+  background-color: transparan;; /* Background kartu semi-transparan */
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.skills-section.dark .skill-name {
+  color: white;
+}
+
+
+/* --- TEMA TERANG (LIGHT THEME) --- */
+.skills-section.light .line,
+.skills-section.light .title-text {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.skills-section.light .title-text {
+  color: #333;
+}
+.skills-section.light .skill-card-inner {
+  background-color: transparent; /* Background kartu semi-transparan */
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.skills-section.light .skill-name {
+  color: #333;
+}
+.skills-section.light {
+  border-top: 1px solid #ddd;
+}

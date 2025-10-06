@@ -1,0 +1,122 @@
+/* src/components/experiences/experiences.css */
+
+/* ================================== */
+/* === STYLE DASAR (LIGHT THEME) === */
+/* ================================== */
+
+.experience-section {
+    padding: 60px 20px;
+    background-color: transparent; /* Latar belakang terang */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333; /* Teks gelap */
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.experience-card-wrapper {
+    padding: 0 15px;
+}
+
+.experience-card {
+    background: transparent; /* Kartu putih */
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card-img {
+    width: 80%; /* <-- DIUBAH: Buat lebar gambar tidak 100% */
+    height: 300px; /* <-- DIUBAH: Tinggikan area gambar */
+    object-fit: cover; /* <-- Kembalikan ke 'cover' agar gambar mengisi area */
+    margin: 20px auto 0; /* Memberi jarak atas dan memusatkan gambar */
+    border-radius: 8px; /* Tambahan: Beri sedikit lengkungan pada sudut gambar */
+}
+
+.experience-card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.experience-card-title {
+    color: #333; /* Teks gelap */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.experience-card-org,
+.experience-card-date {
+    color: #777; /* Teks abu-abu */
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.experience-card-desc {
+    font-size: 1rem;
+    color: #555; /* Atau warna tema gelap Anda */
+    line-height: 1.6;
+    text-align: justify; /* <-- TAMBAHKAN BARIS INI */
+}
+
+/* Styling untuk dots slider di tema terang */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #555;
+}
+.slick-dots li.slick-active button:before {
+    color: #333;
+}
+
+
+/* ================================== */
+/* === STYLE TIMPAAN (DARK THEME) === */
+/* ================================== */
+
+.experience-section.dark {
+    background-color: transparent; /* Latar belakang transparan di mode gelap */
+}
+
+.experience-section.dark .experience-title {
+    color: #fff; /* Teks putih */
+}
+
+.experience-section.dark .experience-card {
+    background: rgba(255, 255, 255, 0.05); /* Efek glassmorphism */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-section.dark .experience-card-title {
+    color: #f4f4f4; /* Teks putih keabuan */
+}
+
+.experience-section.dark .experience-card-org,
+.experience-section.dark .experience-card-date {
+    color: #ccc; /* Teks abu-abu terang */
+}
+
+.experience-section.dark .experience-card-desc {
+    color: #ddd; /* Teks abu-abu terang */
+}
+
+/* Styling untuk dots slider di tema gelap */
+.experience-section.dark .slick-dots li button:before {
+    color: #ccc;
+}
+.experience-section.dark .slick-dots li.slick-active button:before {
+    color: #fff;
+}
