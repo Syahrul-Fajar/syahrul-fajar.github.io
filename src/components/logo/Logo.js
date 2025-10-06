@@ -31,7 +31,7 @@ export const Logo = () => {
       aria-labelledby="logoTitle"
       overflow="visible" // <-- TAMBAHKAN PROPERTI INI
     >
-      <title id="logoTitle">Logo Kode</title>
+      <title id="logoTitle">Portofolio</title>
       <text x="50" y="52" className={classes.logoText}>
         &lt;/&gt;
       </text>

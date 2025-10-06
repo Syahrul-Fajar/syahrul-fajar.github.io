@@ -45,7 +45,7 @@ export const Contact = () => {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'You have sent an email!',
+      title: 'Anda telah mengirim email!',
       showConfirmButton: false,
       timer: 1500
     })
