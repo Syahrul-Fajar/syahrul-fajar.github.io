@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fdf1ec6.css",
-    "main.js": "/static/js/main.b74b956e.js",
+    "main.js": "/static/js/main.482e4b44.js",
     "static/js/3.bddc4670.chunk.js": "/static/js/3.bddc4670.chunk.js",
     "static/media/bemkm.jpg": "/static/media/bemkm.4b2a87af1dafbd155dcb.jpg",
     "static/media/baelangan.png": "/static/media/baelangan.b92df1c74ab65b1fa28f.png",
@@ -14,8 +14,8 @@
     "static/media/bemftik.jpeg": "/static/media/bemftik.9453066e6352d470bbcc.jpeg",
     "static/media/react.svg": "/static/media/react.c3a0b34aae466451a91157424eec1ee3.svg",
     "static/media/laravel.svg": "/static/media/laravel.6f8afa8068ec283083af194c57f425bc.svg",
-    "static/media/mysql.svg": "/static/media/mysql.61d16d6438ce80c593a10153f5654b10.svg",
     "index.html": "/index.html",
+    "static/media/mysql.svg": "/static/media/mysql.61d16d6438ce80c593a10153f5654b10.svg",
     "static/media/microsoftoffice.svg": "/static/media/microsoftoffice.75a83b98c378ee32b3df5bb5e22e6f0c.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/wordpress.svg": "/static/media/wordpress.f39aa81ef001e6818aec561dcfdb4289.svg",
@@ -33,11 +33,11 @@
     "static/media/html.svg": "/static/media/html.75bdf0b057c088503944680032ea6347.svg",
     "static/media/figma.svg": "/static/media/figma.cc8e111619371cf586cc11dbd3173da0.svg",
     "main.5fdf1ec6.css.map": "/static/css/main.5fdf1ec6.css.map",
-    "main.b74b956e.js.map": "/static/js/main.b74b956e.js.map",
+    "main.482e4b44.js.map": "/static/js/main.482e4b44.js.map",
     "3.bddc4670.chunk.js.map": "/static/js/3.bddc4670.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fdf1ec6.css",
-    "static/js/main.b74b956e.js"
+    "static/js/main.482e4b44.js"
   ]
 }
